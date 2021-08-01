@@ -19,8 +19,8 @@
         <div class="col text-center">
             <div class="row">
                 <div class="form-group col-md-4">
-                    <label for="input">Input</label>
-                    <select id="input" class="form-control">
+                    <label for="input_type">Input Type</label>
+                    <select id="input_type" class="form-control">
                         <option value="1">Binary</option>
                         <option value="2">Decimal</option>
                         <option value="3">Hex</option>
@@ -29,8 +29,8 @@
 
 
                 <div class="form-group col-md-4">
-                    <label for="ouput">Output</label>
-                    <select id="output" class="form-control">
+                    <label for="ouput_type">Output Type</label>
+                    <select id="output_type" class="form-control">
                         <option value="1">Binary</option>
                         <option value="2">Decimal</option>
                         <option value="3">Hex</option>
@@ -38,11 +38,9 @@
                 </div>
                 <!-- For symmetry lol -->
                 <div class="form-group col-md-4">
-                    <label for="ouput">N/A</label>
-                    <select id="output" class="form-control" disabled>
-                        <option value="1">Binary</option>
-                        <option value="2">Decimal</option>
-                        <option value="3">Hex</option>
+                    <label for="blank">N/A</label>
+                    <select id="blank" class="form-control" disabled>
+                        <option value="1">blank</option>
                     </select>
                 </div>
             </div>
@@ -50,8 +48,15 @@
 
         <div class="col text-center">
             <div class="form-group">
-                <label for="exampleFormControlTextarea1">Converted Output</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <label for="input">Input</label>
+                <textarea class="form-control" id="input" rows="3"></textarea>
+            </div>
+        </div>
+
+        <div class="col text-center">
+            <div class="form-group">
+                <label for="output">Converted Output</label>
+                <textarea class="form-control" id="output" rows="3"></textarea>
             </div>
         </div>
 
