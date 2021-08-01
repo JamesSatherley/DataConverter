@@ -15,23 +15,49 @@
 <body>
 
     <div class="container">
-        
-        <select class="selectpicker">
-            <option value="1">Binary</option>
-            <option value="2">Decimal</option>
-            <option value="3">Hex</option>
-        </select>
 
-          
-        <select class="selectpicker">
-            <option value="1">Binary</option>
-            <option value="2">Decimal</option>
-            <option value="3">Hex</option>
-        </select>
-        
-        <button class="convertButton">Convert</button>
-        
-        
+        <div class="col text-center">
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label for="input">Input</label>
+                    <select id="input" class="form-control">
+                        <option value="1">Binary</option>
+                        <option value="2">Decimal</option>
+                        <option value="3">Hex</option>
+                    </select>
+                </div>
+
+
+                <div class="form-group col-md-4">
+                    <label for="ouput">Output</label>
+                    <select id="output" class="form-control">
+                        <option value="1">Binary</option>
+                        <option value="2">Decimal</option>
+                        <option value="3">Hex</option>
+                    </select>
+                </div>
+                <!-- For symmetry lol -->
+                <div class="form-group col-md-4">
+                    <label for="ouput">N/A</label>
+                    <select id="output" class="form-control" disabled>
+                        <option value="1">Binary</option>
+                        <option value="2">Decimal</option>
+                        <option value="3">Hex</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="col text-center">
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Converted Output</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+        </div>
+
+        <div class="col text-center">
+            <button class="btn btn-primary mb-2" onclick="main()">Go!</button>
+        </div>
     </div>
     <script src="./assets/script/main.js"></script>
 </body>
